@@ -4,7 +4,7 @@ echo "=============================="
 echo "=== upload gamelift script ==="
 echo "=============================="
 
-SCRIPT_VER=`cat VERSION`
+SCRIPT_VER=`date +%Y-%m-%d-%H-%M-%S`
 ZIPPATH=`pwd`/server.zip
 
 echo "VERSION: $SCRIPT_VER"
