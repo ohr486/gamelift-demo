@@ -8,6 +8,4 @@ jobs:
       - run:
           name: install awscli
           command: sudo pip install awscli
-      - deploy:
-          name: deploy
-          command: sh ./deploy.sh
+      - run: ./.circleci/deploy.sh
