@@ -9,6 +9,11 @@ jobs:
           name: install awscli
           command: sudo pip install awscli
       - run:
+          name: display env
+          command: |
+              echo pwd=`pwd`
+              ls -alh
+      - run:
           name: deploy script
           command: |
               cp ./script/VERSION .
