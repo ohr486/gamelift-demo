@@ -16,9 +16,11 @@ jobs:
       - run:
           name: deploy script
           command: |
-              cp ./script/VERSION .
               cp ./script/server.js .
               cp ./script/upload-script.sh .
-              cp ./script/delete-old-fleet.sh .
               ./upload-script.sh
+      -run:
+          name: delete old fleet
+          command: |
+              cp ./script/delete-old-fleet.sh .
               ./delete-old-fleet.sh
