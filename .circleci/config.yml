@@ -19,4 +19,6 @@ jobs:
               cp ./script/VERSION .
               cp ./script/server.js .
               cp ./script/upload-script.sh .
+              cp ./script/delete-old-fleet.sh .
               ./upload-script.sh
+              ./delete-old-fleet.sh
