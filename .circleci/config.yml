@@ -19,7 +19,7 @@ jobs:
               cp ./script/server.js .
               cp ./script/upload-script.sh .
               ./upload-script.sh
-      -run:
+      - run:
           name: delete old fleet
           command: |
               cp ./script/delete-old-fleet.sh .
