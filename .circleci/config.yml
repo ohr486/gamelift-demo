@@ -11,7 +11,7 @@ jobs:
       - run:
           name: deploy script
           command: |
-              cp script/VERSION .
-              cp script/server.js .
-              cp script/upload-script.sh
+              cp ./script/VERSION .
+              cp ./script/server.js .
+              cp ./script/upload-script.sh
               ./upload-script.sh
