@@ -11,7 +11,7 @@ jobs:
       - run:
           name: deploy script
           command: |
-              pwd
-              cp ../script/VERSION .
-              cp ../script/upload-script.sh .
-              ./upload-script.sh
+              echo `pwd`
+              #cp ../script/VERSION .
+              #cp ../script/upload-script.sh .
+              #./upload-script.sh
