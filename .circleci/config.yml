@@ -10,4 +10,4 @@ jobs:
           command: sudo pip install awscli
       - deploy:
           name: deploy
-          command: deploy.sh
+          command: sh ./deploy.sh
