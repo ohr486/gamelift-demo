@@ -10,4 +10,6 @@ jobs:
           command: sudo pip install awscli
       - deploy:
           name: deploy
-          command: which awscli
+          command: |
+              which aws
+              aws --version
