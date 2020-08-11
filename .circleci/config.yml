@@ -8,9 +8,4 @@ jobs:
       - run:
           name: install awscli
           command: sudo pip install awscli
-      - run:
-          name: deploy script
-          command: |
-              cp ./script/VERSION .
-              cp ./script/upload-script.sh .
-              ./upload-script.sh
+      - run: ./.circleci/deploy.sh
