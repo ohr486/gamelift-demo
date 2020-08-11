@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/bash -xe
 
-cd ../script
+
+
 ./upload-script.sh
