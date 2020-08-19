@@ -33,6 +33,8 @@ echo "LATEST FLEET CREATION TIME: $LATEST_FLEET_CREATION_TIME"
 LATEST_FLEET_ID=`aws gamelift describe-fleet-attributes | jq ".FleetAttributes[] | select(.CreationTime == $LATEST_FLEET_CREATION_TIME) | .FleetId" | tr -d '"'`
 echo "LATEST FLEET ID: $LATEST_FLEET_ID"
 
+# TODO: wait for new fleet setuped
+
 echo
 echo "============================="
 echo "=== update gamelift alias ==="
