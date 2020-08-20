@@ -34,6 +34,10 @@ LATEST_FLEET_ID=`aws gamelift describe-fleet-attributes | jq ".FleetAttributes[]
 echo "LATEST FLEET ID: $LATEST_FLEET_ID"
 
 # TODO: wait for new fleet setuped
+echo
+echo "============================="
+echo "=== wait gamelift fleet ====="
+echo "============================="
 
 echo
 echo "============================="
