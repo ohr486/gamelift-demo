@@ -20,6 +20,16 @@ jobs:
               cp ./script/upload-script.sh .
               ./upload-script.sh
       - run:
+          name: wait for fleet
+          command: |
+              cp ./script/wait-for-fleet.sh .
+              ./wait-for-fleet.sh
+      - run:
+          name: update alias
+          command: |
+              cp ./script/update-alias.sh .
+              ./update-alias.sh
+      - run:
           name: delete old fleet
           command: |
               cp ./script/delete-old-fleet.sh .
