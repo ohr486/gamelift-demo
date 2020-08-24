@@ -11,7 +11,7 @@ do
   ACTIVE_CNT=`aws gamelift describe-fleet-attributes | jq '.FleetAttributes[] | .Status' | grep "\"ACTIVE\"" | wc -l`
   echo "CURRENT ACTIVE FLEET CNT is: $ACTIVE_CNT"
 
-  if [ $ACTIVE_CNT -gt 2 ]; then
+  if [ $ACTIVE_CNT -ge 2 ]; then
     echo "FINISH WAITING ..."
     break
   fi
