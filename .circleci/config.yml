@@ -30,7 +30,7 @@ jobs:
               cp ./script/update-alias.sh .
               #./update-alias.sh
       - run:
-          name: delete old fleet
+          name: delete inactive fleet
           command: |
               cp ./script/delete-old-fleet.sh .
               ./delete-old-fleet.sh
